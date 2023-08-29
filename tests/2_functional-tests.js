@@ -93,10 +93,9 @@ suite('Functional Tests with Zombie.js', function () {
           browser.assert.text('span#name', 'Cristoforo');
           browser.assert.text('span#surname', 'Colombo');
           browser.assert.elements('span#dates', 1);
+          done();
         })
       })
-
-      done();
     });
     // #6
     test('Submit the surname "Vespucci" in the HTML form', function (done) {
@@ -106,11 +105,9 @@ suite('Functional Tests with Zombie.js', function () {
           browser.assert.text('span#name', 'Amerigo');
           browser.assert.text('span#surname', 'Vespucci');
           browser.assert.elements('span#dates', 1);
-
+          done();
         })
       })
-
-      done();
     });
   });
 });
